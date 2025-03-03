@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" >
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width , initial-scale=1.0">
         <title> Login Form</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
 
     <body>
         <form class="box">
-            <h1>Login</h1>
-            <input type="text" name="" placeholder="Username">
-            <input type="password" name="" placeholder="Password">
+            <h1>Login page</h1>
+            <input type="text" name="Username" placeholder="&#xf007;  Username" required>
+            <div class="pass">
+                <input type="password" name="password" placeholder="&#xf21b;  Password" id="password" required>
+
+                <i class="fas fa-eye" onclick="togglePasswordVisibility()"></i>
+            </div>
             <button type="submit">Login</button>
         </form>
-    </body>
- </html>
 
- `
+        <script src="script.js"></script>
+    </body>
+</html>
